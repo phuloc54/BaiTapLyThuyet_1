@@ -1,0 +1,345 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* Reset CSS */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  font-style: inherit;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/* Banner */
+.banner {
+  padding: 3px;
+  border: 2px solid #000;
+  margin-bottom: 4px;
+}
+
+.banner__image {
+  width: 100%;
+}
+
+/* Navigation */
+.nav__list {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  padding: 12px 10px;
+  background: #000;
+}
+
+.nav__link {
+  padding: 8px 16px;
+  font-size: 1.6rem;
+  color: #fff;
+  transition: all 0.2s linear;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+}
+
+/* Menu List */
+.aside {
+  padding: 12px;
+  border: 4px solid #ababab;
+}
+
+.aside__title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #00a0b2;
+}
+
+.menu__list {
+  margin-top: 16px;
+  margin-left: 20px;
+}
+
+.menu__item + .menu__item {
+  margin-top: 18px;
+}
+
+.menu__link {
+  color: #00a0b2;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+}
+
+.sub-menu {
+  margin-top: 12px;
+  margin-left: 20px;
+}
+
+.sub-menu__item {
+  margin-top: 8px;
+}
+
+.sub-menu__link {
+  color: #00a0b2;
+  transition: all 0.2s linear;
+}
+
+.menu__link:hover,
+.sub-menu__link:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+.hero {
+  padding: 12px;
+  border: 4px solid #ababab;
+  border-left: none;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+.product {
+  padding: 6px;
+  background: #ababab;
+}
+
+.product__title {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2a3eb1;
+}
+
+.product__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 60px;
+  margin-top: 12px;
+  max-width: 95%;
+  margin-inline: auto;
+  padding-bottom: 16px;
+}
+
+.product__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 6px 20px 16px;
+}
+
+.product__thumbnail {
+  border-radius: 4px;
+}
+
+.product__name {
+  color: #000;
+  font-size: 1.5rem;
+}
+
+.product__price {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.product__rating i {
+  color: #ffeb3b;
+}
+
+.product__button {
+  min-width: 82px;
+  border: none;
+  background: #ff9800;
+  padding: 4px 10px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.footer {
+  padding: 10px;
+  padding-bottom: 20px;
+  border: 4px solid #ababab;
+  border-top: none;
+}
+
+.contact {
+  max-width: 40%;
+  margin-left: auto;
+}
+
+.contact a {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1c54b2;
+  display: inline-block;
+  padding: 8px 20px;
+  transition: all 0.2s linear;
+}
+
+.contact a:hover {
+  color: red;
+}
+
+.footer__copyright {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.footer__copyright a {
+  text-decoration: underline;
+}
